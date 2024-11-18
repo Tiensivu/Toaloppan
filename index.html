@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Loppa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="start-screen" id="startScreen">
+        <img src="images/toaloppan.png" alt="Toaloppan" class="start-image">
+        <h1>Toaloppan</h1>
+        <img src="images/logo.png" alt="Logga" class="logo-image">
+        <button onclick="startGame()">Starta Spelet</button>
+    </div>
+    <div class="background-test" id="backgroundTest" onclick="toggleBackground()">
+        <div id="instructions" class="instructions-text">Klicka för att bläddra i loppan.</div>
+    </div>
+    <div class="color-buttons" id="colorButtons" style="display: none;">
+        <button class="color-button yellow" onclick="selectColor('yellow')">Gul</button>
+        <button class="color-button green" onclick="selectColor('green')">Grön</button>
+        <button class="color-button pink" onclick="selectColor('pink')">Rosa</button>
+        <button class="color-button blue" onclick="selectColor('blue')">Blå</button>
+        <button class="color-button red" onclick="selectColor('red')" style="display: none;">Röd</button>
+        <button class="color-button purple" onclick="selectColor('purple')" style="display: none;">Lila</button>
+        <button class="color-button light-blue" onclick="selectColor('light-blue')" style="display: none;">Ljusblå</button>
+        <button class="color-button orange" onclick="selectColor('orange')" style="display: none;">Orange</button>
+    </div>
+  
+    <div class="question-box" id="questionBox" style="display: none;">
+        <div id="questionText">Här visas frågan</div>
+        <div class="options">
+            <button onclick="checkAnswer('A')">A. Nej</button>
+            <button onclick="checkAnswer('B')">B. Ja</button>
+            <button onclick="checkAnswer('C')">C. Kanske</button>
+        </div>
+        <div id="feedbackText"></div>
+        <button onclick="resetLoop()" class="reset-button">Ny fråga</button> <!-- Återställ-knapp -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

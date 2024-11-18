@@ -1,0 +1,220 @@
+/* Grundinställningar för body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    background-color: #f0f0f0;
+}  /* Avsluta här */
+
+
+/* Startskärm */
+.start-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    border: 2px solid #004029;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: #e4edd9;
+}
+
+.start-image {
+    width: 150px; /* Justera storleken efter behov */
+    height: auto;
+    margin-bottom: 20px; /* Minskat avstånd mellan bild och text */
+}
+
+
+.start-screen button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    background-color: #67ba43;
+}
+
+/* Bakgrund för själva loppan */
+.background-test {
+    width: 300px;
+    height: 300px;
+    background-image: url('closed.png'); /* Standardbakgrund */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #004029;
+    display: none; /* Dölj tills spelet startar */
+    z-index: 2; /* Så att den visas ovanpå startskärmen när spelet startar */
+}
+
+/* Färglada knappar för att välja färg i loppan */
+.color-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.color-button {
+    width: 80px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.color-button.yellow { background-color: #FFD700; }
+.color-button.green { background-color: #32CD32; }
+.color-button.pink { background-color: #FF69B4; }
+.color-button.blue { background-color: #1E90FF; }
+.color-button.red { background-color: #FF4500; }
+.color-button.purple { background-color: #8A2BE2; }
+.color-button.light-blue { background-color: #87CEFA; }
+.color-button.orange { background-color: #FFA500; }
+
+/* Frågerutan */
+.question-box {
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 60%;
+    height: 60%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-family: 'Outfit', sans-serif;
+}
+
+#questionText {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Knappar för svarsalternativ */
+.options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.options button {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    transition: background-color 0.3s;
+}
+
+.options button:hover {
+    background-color: #d1d1d1;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+}
+
+/* Feedbacktext som visas efter att användaren har svarat */
+#feedbackText {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin-top: 5px;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Knapp för att återställa spelet eller visa en ny fråga */
+.reset-button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+}
+
+.reset-button:hover {
+    background-color: #45a049;
+
+}
+.logo-image {
+    max-width: 120px; /* Begränsar bredden så att loggan inte blir för stor */
+    height: auto; /* Behåller proportionerna */
+    margin-top: 15px; /* Lite avstånd mellan texten och loggan */
+    margin-bottom: 15px; /* Lite avstånd mellan loggan och knappen */
+}
+.start-screen h1 {
+    font-size: 28px; /* Justera storlek efter behov */
+    margin: 5px;  /* Ger avstånd ovanför och under texten */
+    color: #333;     /* Textfärg */
+    margin-top: 10px;
+    font-family: 'Outfit', sans-serif;
+
+}
+.question-box {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.question-box.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.question-box.hide {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+
+.instructions-text {
+    font-size: 14px; /* Justera storleken efter behov */
+    color: #333; /* Textfärg */
+    text-align: center; /* Centrera texten */
+    margin-top: 5px; /* Avstånd mellan loppan och texten */
+    font-family: 'Outfit', sans-serif; /* Samma typsnitt som resten av spelet */
+}
+
+@media (max-width: 768px) {
+    .start-screen {
+        width: 300px;
+        height: 300px;
+    }
+
+    .logo-image {
+        max-width: 100px; /* Minska storleken på loggan på mindre skärmar */
+    }
+
+    .start-screen button {
+        margin-top: 20px; /* Anpassa avståndet på mindre skärmar */
+    }
+}
