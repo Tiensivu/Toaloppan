@@ -87,7 +87,7 @@ var questions = {
     pink: {
         text: "Är det okej att spola ner matrester?",
         feedback: {
-            A: "Nej, matrester kan orsaka stopp och locka till sig råttor",
+            A: "Rätt svar, matrester kan orsaka stopp och locka till sig råttor",
             B: "Fel svar, prova igen.",
             C: "Fel svar, prova igen."
         }
@@ -120,14 +120,14 @@ var questions = {
         text: "Får man spola ner kiss och bajs?",
         feedback: {
             A: "Fel svar, prova igen.",
-            B: "Ja, toaletter gillar kiss och bajs.",
+            B: "Rätt svar, toaletter gillar kiss och bajs.",
             C: "Fel svar, prova igen."
         }
     },
     orange: {
         text: "Kan man spola ner blöjor?",
         feedback: {
-            A: "Nej, blöjor ska aldrig spolas ner.",
+            A: "Rätt svar, blöjor ska aldrig spolas ner.",
             B: "Fel svar, prova igen.",
             C: "Fel svar, prova igen."
         }

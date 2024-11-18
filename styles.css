@@ -217,4 +217,14 @@ body {
     .start-screen button {
         margin-top: 20px; /* Anpassa avståndet på mindre skärmar */
     }
+    @media (max-width: 600px) {
+        .cirkel {
+            width: 150px;
+            height: 150px;
+        }
+    
+        .cirkel img {
+            width: 70%;
+        }
+    }
 }
