@@ -238,11 +238,25 @@ body {
             height: auto;
         }
     
-        .background-test,
+        .background-test {
+            display: block !important; /* Se till att bakgrunden fortfarande visas */
+            width: 200px; /* Anpassa storlek */
+            height: 200px; /* Anpassa storlek */
+            margin: 0 auto;
+        }
+    
         .color-buttons {
-            display: none !important; /* Dölj bakgrund och färgknappar i mobilläge när frågan visas */
+            display: flex; /* Se till att färgknappar fortfarande visas när de ska */
+        }
+    
+        .question-box {
+            width: 90%; /* Anpassa bredden så att den passar mobilskärmen */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
+    
     
     
       
