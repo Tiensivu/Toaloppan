@@ -213,6 +213,11 @@ body {
     .logo-image {
         max-width: 100px; /* Minska storleken på loggan på mindre skärmar */
     }
+    .start-image {
+        width: 100px; /* Minska bildens storlek */
+        height: auto; /* Behåll proportionerna */
+    }
+
 
     .start-screen button {
         margin-top: 20px; /* Anpassa avståndet på mindre skärmar */
@@ -227,4 +232,18 @@ body {
             width: 70%;
         }
     }
+    
+        .question-box {
+            width: 100%; /* Frågerutan fyller större delen av skärmen */
+            height: auto;
+        }
+    
+        .background-test,
+        .color-buttons {
+            display: none !important; /* Dölj bakgrund och färgknappar i mobilläge när frågan visas */
+        }
+    }
+    
+    
+      
 }
