@@ -177,3 +177,6 @@ function resetGame() {
     document.getElementById("backgroundTest").style.display = "block"; // Visa loppan igen
     document.getElementById("questionBox").style.display = "none"; // Dölj frågerutan
 }
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("startButton").addEventListener("click", startGame);
+});
