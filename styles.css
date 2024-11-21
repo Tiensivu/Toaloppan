@@ -233,10 +233,7 @@ body {
         }
     }
     
-        .question-box {
-            width: 100%; /* Frågerutan fyller större delen av skärmen */
-            height: auto;
-        }
+        
     
         .background-test {
             display: block !important; /* Se till att bakgrunden fortfarande visas */
@@ -255,6 +252,9 @@ body {
             left: 50%;
             transform: translate(-50%, -50%);
         }
+        .instructions-text {
+            display: none;
+          }
     }
     
     
