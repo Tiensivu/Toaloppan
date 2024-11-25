@@ -39,7 +39,7 @@ body {
 /* Startskärm knappen - använd samma stil som färgknapparna */
 .start-screen button {
     width: 90px; /* Samma bredd som färgknapparna */
-    padding: 10px;
+    padding: 8px 12px;
     border: none;
     cursor: pointer;
     font-weight: bold;
