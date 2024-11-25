@@ -30,9 +30,9 @@ body {
 }
 
 .start-image {
-    width: 150px; /* Justera storleken efter behov */
+    width: 180px; /* Justera storleken efter behov */
     height: auto;
-    margin-bottom: 20px; /* Minskat avstånd mellan bild och text */
+    margin-bottom: 15px; /* Minskat avstånd mellan bild och text */
 }
 
 
@@ -182,8 +182,8 @@ body {
 .logo-image {
     max-width: 120px; /* Begränsar bredden så att loggan inte blir för stor */
     height: auto; /* Behåller proportionerna */
-    margin-top: 15px; /* Lite avstånd mellan texten och loggan */
-    margin-bottom: 15px; /* Lite avstånd mellan loggan och knappen */
+    margin-top: 10px; /* Lite avstånd mellan texten och loggan */
+    margin-bottom: 20px; /* Lite avstånd mellan loggan och knappen */
 }
 .start-screen h1 {
     font-size: 28px; /* Justera storlek efter behov */
@@ -226,7 +226,7 @@ body {
         max-width: 100px; /* Minska storleken på loggan på mindre skärmar */
     }
     .start-image {
-        width: 100px; /* Minska bildens storlek */
+        width: 110px; /* Minska bildens storlek */
         height: auto; /* Behåll proportionerna */
     }
 
