@@ -213,6 +213,7 @@ body {
     color: #333; /* Textfärg */
     text-align: center; /* Centrera texten */
     margin-top: 5px; /* Avstånd mellan loppan och texten */
+    margin-bottom: 10px;
     font-family: 'Outfit', sans-serif; /* Samma typsnitt som resten av spelet */
 }
 
@@ -265,8 +266,8 @@ body {
             transform: translate(-50%, -50%);
         }
         .instructions-text {
-            display: none;
-          }
+            margin-top: -20px; /* Öka detta värde för att öka avståndet mellan texten och loppan */
+        }
     }
     
     
