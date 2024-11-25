@@ -155,17 +155,25 @@ function resetLoop() {
 }
 
 function startGame() {
+    const startScreen = document.getElementById("startScreen");
+    const backgroundTest = document.getElementById("backgroundTest");
+    const instructions = document.getElementById("instructions");
+
     // Dölj startskärmen
-    document.getElementById("startScreen").style.display = "none";
+    startScreen.style.display = "none";
+
+    // Tvinga ommålning (reflow) för säkerhetsskull
+    startScreen.offsetHeight;
 
     // Visa loppans bakgrund och instruktionerna
-    document.getElementById("backgroundTest").style.display = "block";
-    document.getElementById("instructions").style.display = "block";
+    backgroundTest.style.display = "block";
+    instructions.style.display = "block";
 
     // Starta spelet genom att sätta bakgrunden till "closed" (första steget)
     step = 0;
     toggleBackground();
 }
+
 
 
 function showQuestion() {
