@@ -162,6 +162,7 @@ function startGame() {
     // Dölj startskärmen
     startScreen.style.display = "none";
 
+
     // Tvinga ommålning (reflow) för säkerhetsskull
     startScreen.offsetHeight;
 
