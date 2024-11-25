@@ -79,7 +79,7 @@ var questions = {
     green: {
         text: "Kan man spola ner babywipes/våtservetter?",
         feedback: {
-            A: "Rätt svar, babywipes och våtservetter kan orsaka stopp, även om de marknadsförs som nedspolningsbara.",
+            A: "Rätt svar, babywipes och våtservetter kan orsaka stopp. Även om de marknadsförs som nedspolningsbara.",
             B: "Fel svar, prova igen.",
             C: "Fel svar, prova igen."
         }
